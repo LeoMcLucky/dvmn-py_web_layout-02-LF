@@ -34,24 +34,24 @@
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
               <ul class="nav navbar-nav menu_nav justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="{% url 'index' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right navbar-social">
                 <li>
-                  <a href="#"><i class="ti-facebook"></i></a>
+                  <a href="https://www.facebook.com"><i class="ti-facebook"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="ti-twitter-alt"></i></a>
+                  <a href="https://x.com"><i class="ti-twitter-alt"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="ti-instagram"></i></a>
+                  <a href="https://www.instagram.com"><i class="ti-instagram"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="ti-skype"></i></a>
+                  <a href="https://teams.microsoft.com"><i class="ti-skype"></i></a>
                 </li>
               </ul>
             </div>
@@ -69,7 +69,7 @@
             <nav aria-label="breadcrumb" class="banner-breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <a href="{% url 'index' %}">Home</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
               </ol>
