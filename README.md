@@ -1,16 +1,22 @@
-# Блог от Лизы
+# Сайт Sensive
 
+Рабочий сайт.
 Блог на Django, серверная часть.
+Фронтенд JS, HTML.
 
-## Запуск
+## Как установить
 
-Для запуска блога у вас уже должен быть установлен Python 3.
-
-- Скачайте код
-- Установите зависимости командой `pip install -r requirements.txt`
-- Запустите сервер командой `python3 manage.py runserver`
-
-После этого переходите по ссылке [127.0.0.1:8000](http://127.0.0.1:8000), вы увидите главную страницу.
+1. Рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html) для изоляции проекта.
+2. Для запуска необходима версия [Python 3.11.*](https://www.python.org/downloads/).
+3. Скачайте код.
+4. Затем используйте `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
+```sh
+pip install -r requirements.txt
+```
+5. Создайте файл базы данных и сразу примените все миграции командой
+```sh
+python3 manage.py migrate
+```
 
 ## Переменные окружения
 
@@ -27,6 +33,15 @@
 - `MEDIA_URL` — по умолчанию это `'/media/'`. [Что такое MEDIA_URL](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-MEDIA_URL).
 - `MEDIA_ROOT` — по умолчанию это `'media'`. [Что такое MEDIA_ROOT](https://docs.djangoproject.com/en/3.0/ref/settings/#std:setting-MEDIA_ROOT).
 
+
+## Запуск
+
+Для запуска блога у вас уже должен быть установлен Python 3.
+```sh
+python3 manage.py runserver
+```
+
+После этого переходите по ссылке [127.0.0.1:8000](http://127.0.0.1:8000), вы увидите главную страницу.
 
 ## Цели проекта
 

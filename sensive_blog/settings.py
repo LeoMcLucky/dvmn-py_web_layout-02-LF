@@ -10,9 +10,9 @@ COMPANY_COORDINATES = [55.751244, 37.618423]
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost', '127.0.0.1'])
 
-SECRET_KEY = env.str("SECRET_KEY")
+SECRET_KEY = env.str("SECRET_KEY", "REPLACE_ME")
 
-DEBUG = env.bool("DEBUG", False)
+DEBUG = env.bool("DEBUG", True)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
